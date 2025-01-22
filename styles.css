@@ -1,15 +1,18 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif; /* Set font to Arial */
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f4f4f4; /* Set a solid background color */
 }
 
 header {
-    background-color: #4CAF50;
-    color: white;
+    background-image: url('sciimg.png'); /* Replace with your header image URL */
+    background-size: cover; /* Cover the entire header */
+    background-position: center; /* Center the image */
+    color: yellow; /* Set header text color to yellow */
     text-align: center;
-    padding: 1em 0;
+    padding: 2em 0; /* Adjust padding as needed */
+    text-shadow: 3px 3px 0px black; /* Thicker black outline for header text */
 }
 
 main {
@@ -21,20 +24,58 @@ main {
 }
 
 section {
-    background-color: white;
+    background-size: cover; /* Cover the entire section */
+    background-position: center; /* Center the image */
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     margin: 10px;
     padding: 20px;
     width: 80%;
     max-width: 600px;
+    position: relative; /* Position relative for pseudo-element */
+}
+
+section:nth-of-type(1) {
+    background-image: url('wind turbines.jpg'); /* Wind Turbines */
+}
+
+section:nth-of-type(2) {
+    background-image: url('solar panel.jpg'); /* Solar Panels */
+}
+
+section:nth-of-type(3) {
+    background-image: url('rain harvesting system.jpg'); /* Rain Harvesting System */
+}
+
+section:nth-of-type(4) {
+    background-image: url('plane.jpg'); /* Airplane */
+}
+
+section:nth-of-type(5) {
+    background-image: url('car.jpg'); /* Car */
+}
+
+section:nth-of-type(6) {
+    background-image: url('train.jpg'); /* Train */
 }
 
 h2 {
-    color: #4CAF50;
+    color: yellow; /* Set h2 text color to yellow */
+    text-shadow: 3px 3px 0px black; /* Thicker black outline for h2 text */
 }
 
 p {
     text-align: center;
     line-height: 1.6;
+    color: white; /* Set paragraph text color to white */
+    text-shadow: 1px 1px 0px black; /* Black outline for paragraph text */
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.8em; /* Smaller font size */
+    color: white; /* Set footer text color to white */
+    font-weight: bold; /* Make footer text thicker */
+    text-shadow: 1px 1px 0px black; /* Black outline for footer text */
 }
