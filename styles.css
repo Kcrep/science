@@ -33,12 +33,13 @@ section {
     width: 80%;
     max-width: 600px;
     position: relative; /* Position relative for pseudo-element */
-    transition: transform 0.3s ease; /* Smooth transition for transform */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and box-shadow */
     border: 2px solid black; /* Add a black outline */
 }
 
 section:hover {
     transform: scale(1.05); /* Enlarge the section slightly on hover */
+    box-shadow: 0 0 20px rgba(255, 255, 0, 0.8); /* Add a yellow glow effect */
 }
 
 section:nth-of-type(1) {
