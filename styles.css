@@ -12,7 +12,7 @@ header {
     color: yellow; /* Set header text color to yellow */
     text-align: center;
     padding: 2em 0; /* Adjust padding as needed */
-    text-shadow: 3px 3px 0px black; /* Thicker black outline for header text */
+    text-shadow: 4px 4px 0px black; /* Thicker black outline for header text */
 }
 
 main {
@@ -33,6 +33,12 @@ section {
     width: 80%;
     max-width: 600px;
     position: relative; /* Position relative for pseudo-element */
+    transition: transform 0.3s ease; /* Smooth transition for transform */
+    border: 2px solid black; /* Add a black outline */
+}
+
+section:hover {
+    transform: scale(1.05); /* Enlarge the section slightly on hover */
 }
 
 section:nth-of-type(1) {
@@ -61,14 +67,15 @@ section:nth-of-type(6) {
 
 h2 {
     color: yellow; /* Set h2 text color to yellow */
-    text-shadow: 3px 3px 0px black; /* Thicker black outline for h2 text */
+    text-shadow: 4px 4px 0px black; /* Thicker black outline for h2 text */
 }
 
 p {
     text-align: center;
     line-height: 1.6;
     color: white; /* Set paragraph text color to white */
-    text-shadow: 1px 1px 0px black; /* Black outline for paragraph text */
+    text-shadow: 2px 2px 0px black; /* Thicker black outline for paragraph text */
+    font-size: 1.2em; /* Increase font size for normal text */
 }
 
 footer {
@@ -77,5 +84,5 @@ footer {
     font-size: 0.8em; /* Smaller font size */
     color: white; /* Set footer text color to white */
     font-weight: bold; /* Make footer text thicker */
-    text-shadow: 1px 1px 0px black; /* Black outline for footer text */
+    text-shadow: 2px 2px 0px black; /* Thicker black outline for footer text */
 }
