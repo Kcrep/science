@@ -1,8 +1,10 @@
+
 body {
     font-family: Arial, sans-serif; /* Set font to Arial */
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4; /* Set a solid background color */
+    background-color: #FDF8D4; /* Light green background color */
+    position: relative; /* Position relative for overlay */
 }
 
 header {
@@ -13,6 +15,8 @@ header {
     text-align: center;
     padding: 2em 0; /* Adjust padding as needed */
     text-shadow: 4px 4px 0px black; /* Thicker black outline for header text */
+    position: relative; /* Position relative for z-index */
+    z-index: 2; /* Ensure header is above the overlay */
 }
 
 main {
@@ -21,6 +25,8 @@ main {
     align-items: center;
     justify-content: center;
     padding: 20px;
+    position: relative; /* Position relative for z-index */
+    z-index: 2; /* Ensure main content is above the overlay */
 }
 
 section {
@@ -35,11 +41,8 @@ section {
     position: relative; /* Position relative for pseudo-element */
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and box-shadow */
     border: 2px solid black; /* Add a black outline */
-}
-
-section:hover {
-    transform: scale(1.05); /* Enlarge the section slightly on hover */
-    box-shadow: 0 0 20px rgba(255, 255, 0, 0.8); /* Add a yellow glow effect */
+    background-color: rgba(255, 255, 255, 0.8); /* Light background for readability */
+    z-index: 2; /* Ensure sections are above the overlay */
 }
 
 section:nth-of-type(1) {
@@ -66,6 +69,11 @@ section:nth-of-type(6) {
     background-image: url('train.jpg'); /* Train */
 }
 
+section:hover {
+    transform: scale(1.05); /* Enlarge the section slightly on hover */
+    box-shadow: 0 0 20px rgba(255, 255, 0, 0.8); /* Add a yellow glow effect */
+}
+
 h2 {
     color: yellow; /* Set h2 text color to yellow */
     text-shadow: 4px 4px 0px black; /* Thicker black outline for h2 text */
@@ -80,10 +88,27 @@ p {
 }
 
 footer {
-    text-align: center;
+    text-align: center; /* Center the text */
     margin-top: 20px;
     font-size: 0.8em; /* Smaller font size */
     color: white; /* Set footer text color to white */
     font-weight: bold; /* Make footer text thicker */
     text-shadow: 2px 2px 0px black; /* Thicker black outline for footer text */
+}
+
+.arrow-button {
+    display: inline-block; /* Make it an inline block */
+    padding: 10px 20px; /* Add padding */
+    margin-top: 10px; /* Add some margin on top */
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    text-align: center; /* Center the text */
+    text-decoration: none; /* Remove underline */
+    border-radius: 25px; /* Rounded corners for the button */
+    font-size: 24px; /* Size of the arrow */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.arrow-button:hover {
+    background-color: #45a049; /* Darker shade on hover */
 }
